@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Clock</title>
-</head>
-<body>
-<div class="animation wrapper">
-    <div class="clock">
+  </head>
+  <body>
+    <div class="animation wrapper">
+      <div class="clock">
         <div class="hand hour" data-hour-hand></div>
         <div class="hand minute" data-minute-hand></div>
         <div class="hand second" data-second-hand></div>
@@ -26,26 +26,83 @@
         <div class="number number10">10</div>
         <div class="number number11">11</div>
         <div class="number number12">12</div>
-    </div>
-    <div class="buttons">
+      </div>
+      <div class="buttons">
         <div id="layer1" class="layer1">
-            <button id="button1" onclick="changeColor('#d62976','#29d689')" class="color-buttons"></button>
-            <button id="button2" onclick="changeColor('#EC6453','#53ec98')" class="color-buttons"></button>
-            <button id="button3" onclick="changeColor('#FF9636','#369fff')" class="color-buttons"></button>
-            <button id="button4" onclick="changeColor('#FBC740','#4074fb')" class="color-buttons"></button>
-            <button id="button5" onclick="changeColor('#ECF87F','#8b7ff8')" class="color-buttons"></button>
-            <button id="button6" onclick="changeColor('#7bc043','#8843c0')" class="color-buttons"></button>
-            <button id="button7" onclick="changeColor('#53DFD1','#df5361')" class="color-buttons"></button>
-            <button id="button8" onclick="changeColor('#0381B9','#b94003')" class="color-buttons"></button>
-            <button id="button9" onclick="changeColor('#003060','#603000')" class="color-buttons"></button>
-            <button id="button10" onclick="changeColor('#170B3B','#2f3b0b')" class="color-buttons"></button>
-            <button id="button11" onclick="changeColor('#603F8B','#6a8b3f')" class="color-buttons"></button>
-            <button id="button12" onclick="changeColor('#A06AB4','#7eb46a')" class="color-buttons"></button>
+          <button
+            id="button1"
+            onclick="changeColor('#d62976','#29d689')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button2"
+            onclick="changeColor('#EC6453','#53ec98')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button3"
+            onclick="changeColor('#FF9636','#369fff')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button4"
+            onclick="changeColor('#FBC740','#4074fb')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button5"
+            onclick="changeColor('#ECF87F','#8b7ff8')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button6"
+            onclick="changeColor('#7bc043','#8843c0')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button7"
+            onclick="changeColor('#53DFD1','#df5361')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button8"
+            onclick="changeColor('#0381B9','#b94003')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button9"
+            onclick="changeColor('#003060','#603000')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button10"
+            onclick="changeColor('#170B3B','#2f3b0b')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button11"
+            onclick="changeColor('#603F8B','#6a8b3f')"
+            class="color-buttons"
+          ></button>
+          <button
+            id="button12"
+            onclick="changeColor('#A06AB4','#7eb46a')"
+            class="color-buttons"
+          ></button>
         </div>
         <div class="layer2"></div>
+      </div>
+      <button
+        id="toggle-colors"
+        onclick="call(); toggleButton(); rotateLayers()"
+        class="animation toggle-colors"
+      >
+        <img src="./palette.png" />
+      </button>
+      <button
+        id="toggle-colors-background"
+        class="animation toggle-colors"
+      ></button>
     </div>
-    <button id="toggle-colors" onclick="call(); toggleButton(); rotateLayers()" class="animation toggle-colors"><img src="./palette.png" ></button>
-    <button id="toggle-colors-background" class="animation toggle-colors"></button>
-</div>  
-</body>
+  </body>
 </html>
