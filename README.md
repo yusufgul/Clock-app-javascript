@@ -1,3 +1,3 @@
 # Clock app with javascript
-https://ysf-javascript-clock.herokuapp.com/index.html<br>
+https://css-clock-b5b75.firebaseapp.com/
 --tested on chrome
